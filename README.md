@@ -1,2 +1,2 @@
 # nc-homework
-123
+simple project done by the end of basic js course
