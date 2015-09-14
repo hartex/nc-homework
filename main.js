@@ -1,3 +1,4 @@
+var localData = [];
 $(document).ready(
     function(){
         $("#load").click(
