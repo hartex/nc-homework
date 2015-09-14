@@ -26,10 +26,10 @@ function loadData(fromServer){
 function createTable(dataArray){
     for (var i=0; i < dataArray.length; i++){
         var row = $("<tr/>", {class: "data-row", id: "data-row-"+(i+1)}).appendTo('#data-table');
-        row.append($("<td>"+ (i+1) +"<td/>"));
-        row.append($("<td>"+ dataArray[i] +"<td/>"));
-        $("data-row-"+i).click(function(){
-            $("data-row-"+i).remove();
-        });
+        row.append($("<td class='number-col'>"+ (i+1) +"</td>"));
+        row.append($("<td>"+ dataArray[i] +"</td>"));
     }
+    $(".number-col").click(function(){
+        $(this).parent().remove();
+    });
 }
