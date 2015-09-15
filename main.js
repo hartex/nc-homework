@@ -44,7 +44,7 @@ function drawTable(){
     });
 
     $(".item-col").click(function(){
-        var win = window.open("https://translate.google.ru/", '_blank');
+        var win = window.open("https://translate.google.ru/#en/ru/" + this.textContent, '_blank');
         win.focus();
-    })
+    });
 }
